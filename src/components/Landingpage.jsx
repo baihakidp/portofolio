@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import Container from "./Container";
 import Mail from "./Mail";
@@ -19,7 +20,10 @@ const Landingpage = () => {
               I'm a <b className="font-bold ">Frontend Software Engineer</b>{" "}
               with a strong passion for building web applications with great
               user experiences.
-              <br /> Here's a bit more <b className="font-bold ">about me</b>.
+              <br /> Here's a bit more{" "}
+              <Link href="#footer" scroll={false}>
+                <b className="font-bold ">about me</b>.
+              </Link>
             </p>
           </div>
         </div>

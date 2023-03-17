@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import selfie from "../assets/selfie.jpeg";
 import Container from "./Container";
 
 const NavbarList = [
@@ -22,17 +23,21 @@ const Navbar = () => {
     <Container>
       <div className="">
         <div className="flex justify-between py-6 px-4 ">
-          <div>Image</div>
+          <div>
+            <img src={selfie} alt="error" />
+          </div>
           <div>
             <ul className="flex gap-4 font-bold text-[16px]">
               <Link
                 href="#about"
+                scroll={false}
                 className="text-gray-900 hover:text-gray-600 transition-colors"
               >
                 <li>About</li>
               </Link>
               <Link
                 href="#projects"
+                scroll={false}
                 className="text-gray-900 hover:text-gray-600 transition-colors"
               >
                 <li>Projects</li>
