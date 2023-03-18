@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="">
         <div className="flex justify-between py-6 px-4 ">
           <div>
-            <img src={selfie} alt="error" />
+            <img src={selfie.src} className="max-w-[16px]" alt="error" />
           </div>
           <div>
             <ul className="flex gap-4 font-bold text-[16px]">

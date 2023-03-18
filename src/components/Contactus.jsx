@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-export const ContactUs = () => {
+export const ContactUs = (props) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -25,7 +25,12 @@ export const ContactUs = () => {
   };
 
   return (
-    <div className="fixed z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[90%] max-w-[1100px] h-[700px]  shadow-2xl rounded-[20px] overflow-hidden">
+    <div
+      className={` fixed z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[90%] max-w-[1100px] h-[700px] shadow-2xl rounded-[20px] overflow-hidden transition duration-500 ${
+        props.buka ? "" : "hidden"
+      }`}
+    >
+      {/* kalo modal kebuka opacity 100% kalo modal ketutup opacity 0 */}
       <div className="flex">
         <div className="w-[50%] bg-[#f5f5f5] ">
           <div className=" flex flex-col items-center px-4 mt-20 justify-center gap-3">
