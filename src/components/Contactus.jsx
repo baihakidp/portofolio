@@ -7,21 +7,21 @@ export const ContactUs = (props) => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_fkf9c6w",
-        "template_l08q90e",
-        form.current,
-        "ZlJ3EHugeOnlalc5e"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs;
+    //   .sendForm(
+    //     "service_fkf9c6w",
+    //     "template_l08q90e",
+    //     form.current,
+    //     "ZlJ3EHugeOnlalc5e"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
   };
 
   return (
